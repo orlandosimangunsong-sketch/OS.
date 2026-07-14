@@ -19,7 +19,7 @@ export default function Footer() {
           
           <a
             href={`mailto:${personalInfo.email}`}
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-palette-1 bg-palette-4 hover:bg-palette-3 transition-colors shadow-sm"
+            className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-palette-bg-dark bg-palette-4 hover:scale-105 transition-all shadow-[0_0_15px_rgba(255,162,57,0.4)] hover:shadow-[0_0_25px_rgba(255,162,57,0.6)]"
           >
             <Mail className="w-5 h-5 mr-2" />
             {personalInfo.email}
@@ -33,10 +33,10 @@ export default function Footer() {
           
           <button
             onClick={scrollToTop}
-            className="mt-4 md:mt-0 p-2 text-palette-text/70 hover:text-palette-text hover:bg-palette-2/20 rounded-full transition-colors"
+            className="mt-4 md:mt-0 p-3 text-palette-text/70 hover:text-palette-4 hover:bg-palette-4/10 rounded-full transition-all hover:scale-110 shadow-sm"
             aria-label="Scroll to top"
           >
-            <ArrowUp className="w-5 h-5" />
+            <ArrowUp className="w-6 h-6" />
           </button>
         </div>
       </div>

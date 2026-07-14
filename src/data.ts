@@ -14,9 +14,9 @@ export const personalInfo = {
   phone: "+62 853 7071 6686",
   location: "Bogor, Indonesia",
   socials: {
-    linkedin: "#", // Add your LinkedIn URL here
+    linkedin: "https://www.linkedin.com/in/orlandosimangunsong",
     youtube: "https://www.youtube.com/@orlandosimangunsong/playlists",
-    videoPortfolio: "https://youtu.be/-H0sGOTMEYI?si=kbTkViKA8uA5F8Tv"
+    videoPortfolio: "https://www.youtube.com/watch?v=-H0sGOTMEYI"
   }
 };
 

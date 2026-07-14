@@ -14,25 +14,33 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-palette-1/80 backdrop-blur-md z-50 border-b border-palette-3/20 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 bg-palette-1/70 backdrop-blur-xl z-50 border-b border-palette-3/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0">
-            <a href="#" className="font-display font-bold text-xl text-palette-text tracking-tight">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex-shrink-0"
+          >
+            <a href="#" className="font-display font-bold text-2xl tracking-tight bg-gradient-to-r from-palette-3 to-palette-4 text-gradient">
               OS.
             </a>
-          </div>
+          </motion.div>
           
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <a
+            {navLinks.map((link, i) => (
+              <motion.a
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-palette-text hover:text-palette-3 transition-colors"
+                className="text-sm font-semibold text-palette-text-light hover:text-palette-4 transition-all hover:scale-105"
               >
                 {link.name}
-              </a>
+              </motion.a>
             ))}
           </nav>
 

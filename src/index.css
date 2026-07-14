@@ -5,12 +5,14 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
   
-  --color-palette-1: #F8EDE3;
-  --color-palette-2: #BDD2B6;
-  --color-palette-3: #A2B29F;
-  --color-palette-4: #798777;
+  --color-palette-1: #FCF9EA;
+  --color-palette-2: #A8BBA3;
+  --color-palette-3: #97A87A;
+  --color-palette-4: #FFA239;
   
-  --color-palette-text: #4a5448; /* Darker variant for better text readability */
+  --color-palette-text: #1a2319; /* Very dark for legibility */
+  --color-palette-text-light: #3d4f3b; /* Medium dark for secondary info */
+  --color-palette-bg-dark: #202b1f; /* Dark background for inverted sections */
 }
 
 html {
@@ -18,9 +20,42 @@ html {
 }
 
 body {
-  @apply font-sans bg-palette-1 text-palette-text;
+  @apply font-sans bg-palette-1 text-palette-text-light;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-display text-palette-4;
+  @apply font-display;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+  }
+  .bg-gradient-brand {
+    @apply bg-gradient-to-r from-palette-3 via-palette-2 to-palette-4;
+  }
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
 }
