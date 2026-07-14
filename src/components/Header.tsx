@@ -23,7 +23,7 @@ export default function Header() {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#" className="font-display font-bold text-2xl tracking-tight bg-gradient-to-r from-palette-3 to-palette-4 text-gradient">
+            <a href="#" className="font-display font-bold text-2xl tracking-tight bg-gradient-brand text-gradient animate-gradient">
               OS.
             </a>
           </motion.div>

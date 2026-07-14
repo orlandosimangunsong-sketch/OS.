@@ -32,7 +32,11 @@ h1, h2, h3, h4, h5, h6 {
     @apply bg-clip-text text-transparent;
   }
   .bg-gradient-brand {
-    @apply bg-gradient-to-r from-palette-3 via-palette-2 to-palette-4;
+    @apply bg-gradient-to-r from-palette-3 via-palette-4 to-palette-3;
+  }
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: shine 4s linear infinite;
   }
   .animate-blob {
     animation: blob 7s infinite;
