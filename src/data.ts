@@ -9,12 +9,12 @@
 export const personalInfo = {
   name: "Orlando Simangunsong",
   headline: "Renewable Energy Consultant | Solar PV Engineer | Battery Storage Specialist",
-  summary: "Electrical Engineer with over 13 years of experience in renewable energy, specializing in solar PV, battery storage, and off-grid electrification. Led major rural electrification projects in Papua, Wakatobi, and Sumba, delivering clean and reliable energy to underserved communities. Adept at system design using PVsyst, project management, and integration of battery systems to optimize energy usage. Seeking opportunities to apply this expertise within large-scale operations such as mining or infrastructure.",
+  summary: "Electrical Engineer with over 13 years of experience in renewable energy, specializing in solar PV, battery storage, and offgrid electrification. Led major rural electrification projects in Papua, Wakatobi, and Sumba, delivering clean and reliable energy to underserved communities. Adept at system design using PVsyst, project management, and integration of battery systems to optimize energy usage. Seeking opportunities to apply this expertise within large-scale operations.",
   email: "orlandosimangunsong@gmail.com",
-  phone: "+62 853 7071 6686",
+  phone: "+62 817 400 147",
   location: "Bogor, Indonesia",
   socials: {
-    linkedin: "https://www.linkedin.com/in/orlandosimangunsong",
+    linkedin: "https://www.linkedin.com/in/orlando-simangunsong/",
     youtube: "https://www.youtube.com/@orlandosimangunsong/playlists",
     videoPortfolio: "https://www.youtube.com/watch?v=-H0sGOTMEYI"
   }
@@ -35,14 +35,22 @@ export const experiences = [
     period: "May 2012 - Feb 2020",
     role: "Product Support Engineer",
     location: "Bogor, Indonesia",
-    description: "Supervised solar PV and battery system installation and commissioning across 45+ remote villages. Led energy system design and deployment for telecommunications operators (Telkomsel, Indosat Ooredoo, Hutchison Three), supporting power reliability for network infrastructure across 45+ remote sites and cutting diesel generator use by up to 15%. Conducted knowledge transfer sessions for field technicians in rural areas. Managed performance monitoring, report writing, and system optimization.",
+    description: "Supervised solar PV and battery system installation and commissioning across 45+ remote villages. Led energy system design and deployment for telecommunications operators (Telkomsel, Indosat Ooredoo, Hutchison Three), supporting power reliability for network infrastructure across 100+ remote sites and cutting diesel generator use by up to 75%. Conducted knowledge transfer sessions for field technicians in rural areas. Managed performance monitoring, report writing, and system optimization.",
   },
   {
     id: 3,
+    company: "Fajar Adi Citra Gemilang",
+    period: "Feb 2012 - May 2012",
+    role: "Field Engineer",
+    location: "Medan, Indonesia",
+    description: "Supervised installation of Nokia Siemens Networks (NSN) BTS equipment during network upgrade projects. Ensured proper installation of sector antennas, BTS equipment, power cables, and feeder cables. Performed quality inspections to verify installation compliance with engineering standards. Conducted Pre Commissioning and Commissioning activities to ensure equipment readiness and successful network integration. Prepared commissioning reports and coordinated with installation and project teams to ensure timely project completion.",
+  },
+  {
+    id: 4,
     company: "RT/RW Net",
-    period: "2011 - 2012",
+    period: "Sep 2011 - Feb 2012",
     role: "Network Technician (Co-Founder)",
-    location: "Bogor, Indonesia",
+    location: "Medan, Indonesia",
     description: "Co-founded and operated a community-based internet network (RT/RW Net) together with a university friend shortly after graduation. Configured and maintained network routing, IP addressing, and Mikrotik router setups to provide shared internet access to local households.",
   }
 ];
@@ -85,7 +93,7 @@ export const skills = {
     "Battery Energy Storage",
     "Grid Integration",
     "Energy Audits",
-    "Off-Grid Electrification",
+    "OffGrid Electrification",
     "Project Management",
     "Technical Writing",
     "ETAP",
@@ -98,11 +106,15 @@ export const skills = {
   personalProjects: [
     {
       title: "Modbus Data Acquisition & Logging Tool (Python)",
-      description: "Built Python scripts to communicate with industrial devices over Modbus RTU (serial) and Modbus TCP (network) protocols. Parsed real-time device/sensor readings and automated logging of results into Excel for monitoring and analysis. Self-initiated project undertaken to build practical skills in network engineering and data automation, alongside an electrical/energy systems background."
+      description: "Built Python scripts to communicate with industrial devices over Modbus RTU (serial) and Modbus TCP (network) protocols. Parsed real time device/sensor readings and automated logging of results into Excel for monitoring and analysis. Self initiated project undertaken to build practical skills in network engineering and data automation, alongside an electrical/energy systems background."
+    },
+    {
+      title: "AI Assisted Web Development (Learning Project)",
+      description: "Currently learning AI assisted software development using Large Language Models (LLMs) to support coding and problem solving. Developed a personal web application integrated with Google Sheets as a simple database using Google Apps Script. Gained hands on experience with GitHub and Netlify for version control and deployment. Also keeps up with developments in technology and artificial intelligence (AI), and enjoys exploring AI assisted coding tools to build small applications and automate personal projects."
     },
     {
       title: "PVsyst Tutorial YouTube Channel",
-      description: "Created and published a series of educational video tutorials on PVsyst solar simulation software, targeted at engineers and students entering the renewable energy field. Demonstrates strong subject-matter expertise, communication skills, and commitment to knowledge sharing within the industry."
+      description: "Created and published a series of educational video tutorials on PVsyst solar simulation software, targeted at engineers and students entering the renewable energy field. Demonstrates strong subject matter expertise, communication skills, and commitment to knowledge sharing within the industry."
     }
   ]
 };
